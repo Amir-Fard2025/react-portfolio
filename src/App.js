@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
+import Portfolio from "./components/Portfolio";
+import Resume from "./components/Resume";
+
+const getMainComponent = (page) => {
+  if (page === "Portfolio") {
+    return <Portfolio />;
+  } else if (page === "Resume") {
+    return <Resume />;
+  } else if (page === "Contact") {
+    return <Contact />;
+  }
+  return <AboutMe />;
+};
 
 function App() {
+  const [currPage, setCurrentPage] = useState("AboutMe");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col">
+      <Navbar setCurrentPage={setCurrentPage} />
+      {getMainComponent(currPage)}
     </div>
   );
 }
