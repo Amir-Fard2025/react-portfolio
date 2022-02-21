@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
@@ -23,6 +24,7 @@ function App() {
     <div className="flex flex-col">
       <Navbar setCurrentPage={setCurrentPage} />
       {getMainComponent(currPage)}
+      <Footer />
     </div>
   );
 }

@@ -1,18 +1,22 @@
+import aboutMePhoto from "../images/07.jpg";
+
 function AboutMe() {
   return (
     <div className="container mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 h-screen">
-        <div className="max-h-96 md:h-screen">
+      <div className="grid grid-cols-2 md:grid-cols-2 h-screen">
+        <div className="max-h-40 md:h-40">
           <img
-            className="w-screen h-screen object-cover object-top"
-            src="https://images.pexels.com/photos/270373/pexels-photo-270373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            className="w-screen h-screen/2 object-cover object-top"
+            src={aboutMePhoto}
             alt=""
           />
         </div>
         <div className="flex bg-gray-100 p-10">
           <div className="mb-auto mt-auto max-w-lg">
-            <h1 className="text-3xl uppercase">Jun Santilla</h1>
-            <p className="font-semibold mb-5">Web Developer</p>
+            <h1 className="text-3xl uppercase">Amir Fard</h1>
+            <p className="font-semibold mb-5">
+              Computational Designer and Web Developer
+            </p>
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
               odio. Quisque volutpat mattis eros. Nullam malesuada erat ut
