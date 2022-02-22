@@ -1,6 +1,10 @@
 import Card from "./Card";
 import carbonDown from "../images/carbon-down.jpg";
+import universalDirectory from "../images/universal-directory.jpg";
+import textEditor from "../images/text-editor.jpg";
 const carbonDownLink = "https://jitasek.github.io/carbon-down/";
+const universalDirectoryLink = "https://radiant-savannah-34967.herokuapp.com/";
+const textEditorLink = "https://radiant-savannah-34967.herokuapp.com/";
 
 function Portfolio() {
   return (
@@ -11,8 +15,18 @@ function Portfolio() {
         href={carbonDownLink}
         actualImage={carbonDown}
       />
-      <Card projectName="Project 2" desc="Description 2" />
-      <Card projectName="Project 3" desc="Description 3" />
+      <Card
+        projectName="UNIVERSAL DIRECTORY"
+        desc="Very Powerful directory of security experts which makes the costumer's simple find them and offer their requirements"
+        href={universalDirectoryLink}
+        actualImage={universalDirectory}
+      />
+      <Card
+        projectName="Text Editor"
+        desc="Simple app for both online and offline usages. To add and edit texts"
+        href={textEditorLink}
+        actualImage={textEditor}
+      />
     </div>
   );
 }
