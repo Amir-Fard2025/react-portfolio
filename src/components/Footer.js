@@ -74,7 +74,10 @@ export default function Footer() {
               ></path>
             </svg>
           </a>
-          <a href="#!" className="mr-9 text-gray-800">
+          <a
+            href="https://www.linkedin.com/feed/"
+            className="mr-9 text-gray-800"
+          >
             <svg
               aria-hidden="true"
               focusable="false"
@@ -91,7 +94,7 @@ export default function Footer() {
               ></path>
             </svg>
           </a>
-          <a href="#!" className="text-gray-800">
+          <a href="https://github.com/Amir-Fard2025" className="text-gray-800">
             <svg
               aria-hidden="true"
               focusable="false"

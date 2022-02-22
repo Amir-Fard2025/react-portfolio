@@ -1,12 +1,31 @@
 import { useState } from "react";
-
+import EmailValidator from "email-validator";
 function Contact() {
   let [msg, setMessage] = useState("this is the sample message ...");
-
+  // email validator
   const validateEmail = (e) => {
+    // evaluate if the email is valid or not
     console.log("Curent Email:", e.target.value);
-    setMessage("the Email has been validated ....");
-    console.log("msg:", msg);
+    const emailValidator = EmailValidator.validate(e.target.value);
+    if (emailValidator === true) {
+      console.log("Curent Email is valid");
+    } else {
+      setMessage("email is not valid, please enter a valid email");
+      console.log("msg:", msg);
+    }
+  };
+  // Full Name validator
+
+  const validateFullName = (e) => {
+    const fullName = e.target.value.trim();
+    console.log("Curent Name:", fullName);
+
+    if (fullName && fullName.length > 0) {
+      console.log("Current Full Name is valid");
+    } else {
+      setMessage("name is not valid, please enter a valid name");
+      console.log("msg:", msg);
+    }
   };
 
   return (
@@ -28,6 +47,7 @@ function Contact() {
               id="inline-full-name"
               type="text"
               placeholder="Jane Doe"
+              onBlur={validateFullName}
             />
           </div>
         </div>

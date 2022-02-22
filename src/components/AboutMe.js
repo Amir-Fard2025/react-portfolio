@@ -6,7 +6,7 @@ function AboutMe() {
       <div className="grid grid-cols-2 md:grid-cols-2 h-screen">
         <div className="max-h-40 md:h-40">
           <img
-            className="w-screen h-screen/2 object-cover object-top"
+            className="w-screen h-screen object-cover object-top"
             src={aboutMePhoto}
             alt=""
           />

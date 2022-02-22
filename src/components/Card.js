@@ -1,12 +1,11 @@
-import testImage from "../images/testImage.jpg";
-export default function Card({ projectName, desc }) {
+export default function Card({ projectName, desc, href, actualImage }) {
   return (
     <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
       <a href="/">
-        <img className="rounded-t-lg" src={testImage} alt="" />
+        <img className="rounded-t-lg" src={actualImage} alt="" />
       </a>
       <div className="p-5">
-        <a href="/">
+        <a href={href}>
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {projectName}
           </h5>
