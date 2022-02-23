@@ -5,10 +5,11 @@ function Navbar(prop) {
       <div className="bg-white shadow">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
-            <div>
+            <div className="pl-10">
               <a href="/" className="flex">
-                <h1 className="py-10 text-sm">STUDIO</h1>
+                {/* <h1 className="py-10 text-sm">STUDIO</h1> */}
                 <img className="rounded-t-lg h-20 w-20" src={logo} alt="" />
+                <h1 className="py-10 text-sm">STUDIO</h1>
               </a>
             </div>
 

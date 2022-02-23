@@ -1,7 +1,7 @@
 import { useState } from "react";
 import EmailValidator from "email-validator";
 function Contact() {
-  let [msg, setMessage] = useState("this is the sample message ...");
+  let [msg, setMessage] = useState("");
   // email validator
   const validateEmail = (e) => {
     // evaluate if the email is valid or not
@@ -9,10 +9,14 @@ function Contact() {
     const emailValidator = EmailValidator.validate(e.target.value);
     if (emailValidator === true) {
       console.log("Curent Email is valid");
+      setMessage("");
     } else {
-      setMessage("email is not valid, please enter a valid email");
+      setMessage("Email is not valid, please enter a valid email");
       console.log("msg:", msg);
     }
+  };
+  const clearError = () => {
+    setMessage("");
   };
   // Full Name validator
 
@@ -22,14 +26,15 @@ function Contact() {
 
     if (fullName && fullName.length > 0) {
       console.log("Current Full Name is valid");
+      setMessage("");
     } else {
-      setMessage("name is not valid, please enter a valid name");
+      setMessage("Full name is not valid, please enter a valid name");
       console.log("msg:", msg);
     }
   };
 
   return (
-    <div className="pt-6">
+    <div className="pt-6 pl-6">
       <form className="w-full max-w-sm">
         {/* Fullname */}
         <div className="md:flex md:items-center mb-6">
@@ -68,6 +73,7 @@ function Contact() {
               type="text"
               placeholder="email"
               onBlur={validateEmail}
+              onFocus={clearError}
             />
           </div>
         </div>
@@ -104,7 +110,7 @@ function Contact() {
           <div className="md:w-1/3"></div>
           <div className="md:w-2/3">
             <button
-              className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+              className="shadow bg-gray-500 hover:bg-gray-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
               type="button"
             >
               Submit
