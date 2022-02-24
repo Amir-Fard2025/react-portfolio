@@ -78,6 +78,7 @@ export default function Footer() {
           <a
             href="https://www.linkedin.com/feed/"
             target="_blank"
+            rel="noreferrer"
             className="mr-9 text-gray-800"
           >
             <svg
@@ -100,6 +101,7 @@ export default function Footer() {
           <a
             href="https://github.com/Amir-Fard2025"
             target="_blank"
+            rel="noreferrer"
             className="text-gray-800"
           >
             <svg
