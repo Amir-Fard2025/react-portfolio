@@ -21,10 +21,14 @@ function AboutMe() {
             Computational Designer and Web Developer
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
-            odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.
-            Suspendisse urna nibh, viverra non, semper suscipit, posuere a,
-            pede.
+            I am an Architect who is interested in computational methods. Using
+            algorithmic design and Fabrication I aim to bridge between
+            computation and experiment. Recently I started to practice coding
+            and web development, It helps me to follow the systematic thinking.
+            My goal is a peaceful and green built environment which is mainly
+            based on living systems rather than system of non-living
+            infrastructures. Confidently I believe that Coding and web
+            development helps me to realize this goal.
           </p>
           <button className="bg-black rounded-md py-3 px-7 mt-6 text-white">
             Email Me
