@@ -76,7 +76,7 @@ export default function Footer() {
           </a> */}
           {/* linked in */}
           <a
-            href="https://www.linkedin.com/feed/"
+            href="www.linkedin.com/in/amir-saadat-fard"
             target="_blank"
             rel="noreferrer"
             className="mr-9 text-gray-800"

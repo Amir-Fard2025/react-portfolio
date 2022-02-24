@@ -14,7 +14,7 @@
 ### Project Link
 
 - Please click [here](https://github.com/Amir-Fard2025/react-portfolio) to see the contents of my project in Github
-- [here](https://dry-ocean-52104.herokuapp.com/) you can see the react app deployed on Github
+- [here](https://amir-fard2025.github.io/react-portfolio/) you can see the react app deployed on Github
 
 ### Getting Started
 
@@ -39,8 +39,6 @@ npm run start
 
 <p>The following technologies are implemented in this project:</p>
 
-- HTML
-- CSS
 - Tailwindcss
 - JavaScript
 - REACT
