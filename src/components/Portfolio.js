@@ -9,19 +9,19 @@ const textEditorLink = "https://secure-scrubland-80892.herokuapp.com/";
 const cardInfo = [
   {
     projectName: "CARBON DOWN",
-    desc: "Simple and userfriendly application which makes the people aware of their impacts on environment and their carbon foot prints",
+    desc: "User-friendly application which makes the people aware of their impacts on environment and their carbon footprints",
     href: carbonDownLink,
     actualImage: carbonDown,
   },
   {
     projectName: "UNIVERSAL DIRECTORY",
-    desc: "Very Powerful directory of security experts which makes the costumer's simple find them and offer their requirements",
+    desc: "Very Powerful directory of security experts which gives the users the ability to find the experts easily and offer their requirements",
     href: universalDirectoryLink,
     actualImage: universalDirectory,
   },
   {
     projectName: "TEXT EDITOR",
-    desc: "Simple app for both online and offline usages. To add and edit texts",
+    desc: "Simple Application for both online and offline usages. To add and edit texts",
     href: textEditorLink,
     actualImage: textEditor,
   },
