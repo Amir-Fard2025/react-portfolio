@@ -15,6 +15,7 @@
 
 - Please click [here](https://github.com/Amir-Fard2025/react-portfolio) to see the contents of my project in Github
 - [here](https://amir-fard2025.github.io/react-portfolio/) you can see the react app deployed on Github
+- [here](https://enigmatic-hamlet-98802.herokuapp.com/) you can see the react app deployed on Heroku
 
 ### Getting Started
 

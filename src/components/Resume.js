@@ -1,5 +1,5 @@
 import resume from "../images/lebenslauf.jpg";
-import resumePdf from "../images/lebenslauf.pdf";
+import resumePdf from "../images/CV-AmirSaadatFard.pdf";
 
 function Resume() {
   return (
