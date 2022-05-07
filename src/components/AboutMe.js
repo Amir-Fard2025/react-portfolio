@@ -30,8 +30,8 @@ function AboutMe() {
             infrastructures. Confidently I believe that Coding and web
             development helps me to realize this goal.
           </p>
-          <button className="bg-black rounded-md py-3 px-7 mt-6 text-white">
-            Email Me
+          <button className="bg-gray-200 rounded-md py-3 px-7 mt-6 text-gray-600">
+            Email: fard.cca@gmail.com
           </button>
         </div>
       </div>
